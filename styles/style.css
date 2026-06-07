@@ -10,7 +10,7 @@
     --border-color:#2d2d2d;
     --transition: all .3s ease;
 
-
+}
 
   
     
@@ -34,7 +34,7 @@
        background-color: var(--dark-bg);
         font-family:  'Segoe UI' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: var(--light-text);
-        line-height: 1,6 ;
+        line-height: 1.6 ;
     
     }
 
@@ -107,7 +107,7 @@
 
     }
 
-    .nav-links a::after{
+    .nav-links a:after{
         content: "";
         position: absolute;
         bottom: 0;
@@ -118,7 +118,7 @@
         transition: var(--transition);
 
     }
-    .nav-linksa::hover::after{
+    .nav-links a:hover::after{
         width: 100%;
     }
     section{
@@ -158,7 +158,7 @@
 
     }
 
-    .btn::hover{
+    .btn:hover{
         background-color: #5651d8;
         transform: translateY(-3px);
         box-shadow: 0 5px 15px rgba(108,99,255,0.3);
@@ -167,38 +167,41 @@
     .hero{
         min-height: 100vh;
         display: flex;
-        align-items: space-between;
         align-items: center;
-        gap: 4rem;
+        
 
     }
     .hero-content{
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 5rem;
+        
     }
 
     .hero-text{
         flex: 1 ;
+        flex-direction: column;
+        display: flex;
     }
     .hero-text h1{
-        font-size: 6rem;
-        margin-bottom: .5rem;
-        font-weight: 700;
+        font-size: 4rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
     }
+    
     .hero-text h2{
-        font-size: 1.5rem;
-        color: var(--primary-color);
-        margin-bottom: 1.5rem;
-        font-weight: 600;
-    }
-    .hero-text p{
-        margin-bottom: 1.5rem;
-        color: var(--gray-text);
-        font-size: 1.1rem;
-        max-width: 600px;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
 
-    }
+.hero-text p{
+    max-width: 600px;
+    color: var(--gray-text);
+    margin-bottom: 2rem;
+}
     .social-links{
         display: flex;
         gap: 1rem;
@@ -217,7 +220,7 @@
         transition: var(--transition);
         font-size: 1.7rem;
     }
-    .social-linksa::hover{
+    .social-links a:hover{
         background-color: var(--primary-color);
         transform: translateY(-3px);
 
@@ -226,16 +229,19 @@
     .hero-image{
         flex: 1;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
     .hero-image img{
-        width: 350px;
-        height: 350px;
+        width: 420px;
+        height: 420px;
         object-fit: cover;
         border-radius: 50%;
-        border: 5px solor var(--primary-color);
-        box-shadow: 0 0 25px rgba(100,99,255,.5);
+        border: 5px solid var(--primary-color);
+        box-shadow:         0 0 25px rgba(108,99,255,.4),
+                            0 0 60px rgba(108,99,255,.2);
         transition: var(--transition);
     }
+    .footer-content{
+        display: flex;
 
-}
+    }
